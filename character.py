@@ -124,7 +124,6 @@ class Character:
         print()
         print("\tSTR\tDEX\tCON\tINT\tWIS\tCHA")
         print()
-        # print(f"\t{self.score_str}\t{self.score_dex}\t{self.score_con}\t{self.score_int}\t{self.score_wis}\t{self.score_cha}")
         print(f"\t{self.str}\t{self.dex}\t{self.con}\t{self.int}\t{self.wis}\t{self.cha}")
         print()
         print(f"({self.dex + L[0][1]}): Acrobatics           ({self.wis + L[9][1]}): Medicine\n" +
@@ -164,10 +163,3 @@ def prep_spell_slots(lvl):
            [4,3,3,3,3,2,1,1,1],
            [4,3,3,3,3,2,2,1,1]]
     return spl[lvl-1]
-    
-
-race = species.Species()
-hero = dnd_class.Rouge()
-
-Joe = Character('Joe',17,hero,race)
-# Joe.display_casting()
