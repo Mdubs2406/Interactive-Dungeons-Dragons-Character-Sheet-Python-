@@ -30,5 +30,3 @@ def roll_dice(roll_query):
           else:
             total += int(item)
         return total
-
-print(roll_dice("2d6 + d10 + 1"))
